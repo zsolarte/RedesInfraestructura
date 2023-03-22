@@ -15,8 +15,16 @@ Cada microservicio tendrá asociado una tabla con la información requerida para
 
 El script para la creación de las tablas se encuentra en el archivo scripts.sql
 
-Los microservicios se desarrollaron en JavaScript en el entorno de NodeJS y se usaron las siguientes librerías: express, morgan, mysql, mysql2 y axios.
+Los microservicios se desarrollaron en JavaScript en el entorno de NodeJS (se debió instalar nodejs y npm) y se usaron las siguientes librerías: express, morgan, mysql, mysql2 y axios. Cada microservicio se ejecuta en un puerto diferente: usuarios en el puerto 3001, productos en el 3002 y ordenes en el 3003
 
 En cada carpeta se encuentra el código del microservicio correspondiente.
 
-En la carpeta microWeb se encuentra el código de una aplicación web que hace uso de los microservicios. Esta aplicación está desarrollada en HTML, PHP y usa Bootstrap para el estilo.
+Los pasos para la creación de los microservicios es el siguiente:
+
+1. Se crea una carpeta con el nombre del microservicio (o cualquier nombre) y se ingresa a ella.
+2. Ejecutar el comando para iniciar el proyecto: npm init --yes
+3. Instalar las librerías: npm install express morgan mysql mysql2 axios
+4. Crear la carpeta src para alojar el código, que se encuentra en el repositorio.
+5. Para ejecutar el microservicio: node src/index.js
+
+En la carpeta microWeb se encuentra el código de una aplicación web que hace uso de los microservicios. Esta aplicación está desarrollada en HTML, PHP y usa Bootstrap para el estilo. La aplicación web requiere la instalación de apache y PHP, y copiar el código que se encuentra en el repositorio en la carpeta /var/www/html.
