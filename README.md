@@ -13,3 +13,7 @@ Cada microservicio tendrá asociado una tabla con la información requerida para
 El script para la creación de las tablas se encuentra en el archivo scripts.sql
 
 Los microservicios se desarrollaron en JavaScript en el entorno de NodeJS y se usaron las siguientes librerías: express, morgan, mysql, mysql2 y axios.
+
+En cada carpeta se encuentra el código del microservicio correspondiente.
+
+En la carpeta appMicro se encuentra el código de una aplicación web que hace uso de los microservicios. Esta aplicación está desarrollada en HTML, PHP y usa Bootstrap para el estilo.
